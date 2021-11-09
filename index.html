@@ -9,9 +9,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Eye of god</title>
 </head>
-<body>
+
  <div class="content">
-     <div class="header">
+     <div id="header">
          <div class="uplinks">
              <ul class="list-link">
                  <li><img src="img/github.png" width="35" height="35"><a href="https://github.com/karfagen99" target=»_blank>Github</a></li>
@@ -24,9 +24,10 @@
              <div class="etf"><a href="https://etf2l.org/forum/user/117217/" target=»_blank><img src="img/etf2l.png" width="150" height="75"></a></div>
          </div>
      </div>
-     <div class="mainpage">
+     <div id="mainpage">
          <div class="container-premain">
              <p class="inf p-2 flex-grow-1" >Information</p>
+             <a href="#" class="open-popup">Click</a>
              <div class="version p-2 bd-highlight"><p id="ver">v0.1</p></div>
          </div>
          <div class="favorite-info">
@@ -62,7 +63,7 @@
                        <div class="row row-cols-4">
                            <div class="cardinf">
                                <img src="img/home.jpg" height="85" width="150">
-                               <div class="namecard">ballin</div>
+                               <div class="namecard">home</div>
                            </div>
        
                            <div class="cardinf">
@@ -166,13 +167,9 @@
 
                 </div>
               </div>
-           
         </div>
             <div class="pc"><p class="pcspec">PC specs: i3-10100f gtx 750ti b460m-a pro 16gb</p></div>
          </div>
-
-         
-          
      </div>
  <footer>
      <div class="avainfo">
@@ -181,6 +178,19 @@
      </div>
  </footer>     
  </div> 
-
+ <body>
+<div class="popup">  
+        <div class="popup__body">
+            <div class="popup__content">
+                <a href="#" class="close__popup">Close</a>
+                <div class="popup__title">About site</div>
+                <div class="popup__text">
+                    <p>Последнее обновление 09.11.2021</p>
+                    <p>Сайт будет дорабатыватсья, нашел баг, пиши в социалки</p> 
+                    <p>The site will be finalized, found a bug, write to social networks</p></div>
+            </div>
+        </div>
+    </div>
+    <script src="js/popups.js"></script>
 </body>
 </html>
