@@ -66,27 +66,3 @@
 //в пизду эту залупу нихуя не понял как работает, может еще пригодится 
 
 
-let popupBg = document.querySelector('.popup__content'); // Фон попап окна
-let popup = document.querySelector('.popup'); // Само окно
-let openPopupButtons = document.querySelectorAll('.open-popup'); // Кнопки для показа окна
-let closePopupButton = document.querySelector('.close__popup'); // Кнопка для скрытия окна
-
-openPopupButtons.forEach((button) => {
-    button.addEventListener('click', (e) => {
-        e.preventDefault();
-        popupBg.classList.add('active');
-        popup.classList.add('active');
-    })
-});
-
-closePopupButton.addEventListener('click', () => {
-    popupBg.classList.remove('active');
-    popup.classList.remove('active');
-})
-
-document.addEventListener('click', (e) => {
-    if (e.target === popupBg) {
-        popupBg.classList.remove('active');
-        popup.classList.remove('active'); 
-    }
-});

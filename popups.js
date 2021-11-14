@@ -90,3 +90,30 @@ document.addEventListener('click', (e) => {
         popup.classList.remove('active'); 
     }
 });
+
+let downloadLink = document.getElementsByClassName('download');
+let card = document.getElementsByClassName('card__wrapper');
+for (let i=0; i<card.length; i++)
+{
+    card[i].addEventListener('mouseover',function()
+    {
+        
+        let state = card[i].querySelectorAll('.namecard, .download');
+            for (let i=0; i<state.length; i++)
+            {
+                state[i].classList.add('active')
+                console.log(state[i]);
+            }
+    })
+
+    card[i].addEventListener('mouseout', function()
+    {
+        let state = card[i].querySelectorAll('.namecard, .download');
+        for (let i=0; i<state.length; i++)
+            {
+                state[i].classList.remove('active')
+                console.log(state[i]);
+            }
+    })
+}
+
