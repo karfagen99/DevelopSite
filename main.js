@@ -6,6 +6,7 @@ let closePopupButton = document.querySelector('.close__popup');
 let cardname = document.querySelector('.card__name1');
 
 
+
 openPopupButtons.forEach((button) => {
     button.addEventListener('click', (e) => {
         e.preventDefault();
@@ -16,6 +17,18 @@ openPopupButtons.forEach((button) => {
 });
 
 closePopupButton.addEventListener('click', () => {
+
+    let updateInfo = document.querySelectorAll('.update__info');
+    updateInfo.forEach(function(item)
+    {
+        item.classList.remove('active');
+
+            let btnInfoClose = document.querySelectorAll('.btn__info');
+            btnInfoClose.forEach(function(item)
+            {
+                item.classList.remove('active');
+            })
+    })
     popupBg.classList.remove('active');
     popup.classList.remove('active');
 });
@@ -80,5 +93,8 @@ buttons.forEach(function(but)
 
         currentBtn.classList.add('active')
         currentTabInfo.classList.add('active')
+
+
     })
+
 })
