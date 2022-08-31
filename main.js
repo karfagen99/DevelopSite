@@ -98,6 +98,8 @@ buttons.forEach(function(but)
     })
 
 })
+
+
 // function gir() {  
 //      nums = document.getElementById('nums_1').innerHTML;  
 //      console.log(nums);

@@ -1,3 +1,4 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Bakbak+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Balinese&display=swap');
@@ -435,6 +436,7 @@ li a:hover {
     list-style-type: circle;
     color: rgb(255, 238, 0);
 }
+
 
 #tab_3.active {
     transition: 0.5s all; 
