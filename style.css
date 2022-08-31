@@ -1,6 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Bakbak+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Balinese&display=swap');
+
 * {
     margin: 0;
-    font-family: 'Quicksand', sans-serif;
+    /* font-family: 'Quicksand', sans-serif; */
 }
 
 
@@ -17,13 +21,17 @@ body {
 }
 
 
+.list-link a {
+    
+}
+
 #header {
     width: 1140px;
     height: 475px;
     margin: 0 auto;
     background-image: url("img/eng.jpg");
     background-size: cover;
-   
+    
     
 }
 
@@ -42,6 +50,7 @@ body {
     justify-content: space-between;
     width: 800px;
     margin-top: 15px;
+    
 }
 
 .container-premain {
@@ -52,15 +61,19 @@ body {
     border-radius: 3px;
    box-shadow: 0 5px 10px 0 #0f0f0f, inset 0 1px 3px 0 #544c44, inset 0 -1px 3px 0 #24221e;
    display: flex;
-   justify-content: space-between;
+   /* justify-content: center; */
+}
+
+.container-header {
+    height: 100px;
 }
 
 .container-premain p {
     /* font-family: 'Merienda', cursive; */
     text-align: center;
-    color: #cacaca;
+    color: #aaaaaa;
     font-size: 25px;
-    
+    font-family: 'Bakbak One', cursive;
     
 }
 
@@ -107,6 +120,7 @@ body {
     -webkit-box-shadow: 0px -5px 5px -5px rgba(243, 169, 87, 0.6) inset;
     -moz-box-shadow: 0px -5px 5px -5px rgba(243, 169, 87, 0.6) inset;
     box-shadow: 0px -5px 5px -5px rgba(243, 169, 87, 0.6) inset;
+    /* font-family: 'Catamaran', sans-serif; */
 }
 
 
@@ -236,6 +250,7 @@ li a:hover {
     text-decoration: none;
     color: wheat;
     font-size: 15px;
+    
 }
 
 .download {
@@ -286,7 +301,7 @@ li a:hover {
     display: flex;
     flex-direction: row;
     width: 900px;
-    margin-left: 120px
+    margin-left: 130px
 }
 
 .avainfo img {
@@ -421,6 +436,15 @@ li a:hover {
     color: rgb(255, 238, 0);
 }
 
+#tab_3.active {
+    transition: 0.5s all; 
+    background-color: rgb(46, 46, 46);   
+    opacity: 1;
+    visibility: visible;
+    pointer-events: all;
+    display: block;
+}
+
 #tab_2.active {
     transition: 0.5s all; 
     background-color: rgb(46, 46, 46);   
@@ -439,6 +463,13 @@ li a:hover {
     display: block;
 }
 
+#tab_3 {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    display: none;
+    transition: all 0.8s ease 0s;
+}
 
 #tab_2 {
     
@@ -491,5 +522,5 @@ footer {
     width: 1140px;
     height: 65px;
     background: #202020;
-    
+    /* font-family: 'Noto Sans Balinese', sans-serif; */
 }
