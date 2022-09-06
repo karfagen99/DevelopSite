@@ -78,16 +78,22 @@ body {
     
 }
 
-.container-premain .ver {
+/* .container-premain .ver {
     float: right;
     font-size: 15px;
+} */
+
+.container-bottom .open-popup:hover {
+    color: #cd853f;
+
 }
 
-.container-premain .open-popup:hover {
-    color: peru;
+.container-bottom {
+    display: flex;
+    justify-content: center;
 }
 
-.container-premain .open-popup {
+.container-bottom .open-popup {
     background: #2B2826;
     text-align: center;
     color: #d6d6d6;
@@ -96,6 +102,11 @@ body {
     width: 50px;
     margin-top: 5px;
     text-decoration: none;
+    font-size: 15px;
+    font-family: 'Bakbak One', cursive;
+    -webkit-box-shadow: 0px 3px 15px 0px rgba(205, 133, 63, 0.22);
+    -moz-box-shadow: 0px 3px 15px 0px rgba(205, 133, 63, 0.22);
+    box-shadow: 0px 3px 15px 0px rgba(205, 133, 63, 0.22);
 }
 
 #ver{
@@ -104,13 +115,13 @@ body {
   
 }
 
-.container-premain .version {
+/* .container-premain .version {
     width: 35px;
 }
 
 .container-premain .version p {
     margin-bottom: 5px;
-}
+} */
 
 
 .favorite-info {
@@ -289,31 +300,7 @@ li a:hover {
     font-size: 17px;
 }
 
-/* .pc {
-    
-} */
 
-
-.pc .pcspec {
-    color: rgb(175, 175, 175);
-}
-
-.avainfo {
-    display: flex;
-    flex-direction: row;
-    width: 900px;
-    margin-left: 130px
-}
-
-.avainfo img {
-    border-radius: 40px;
-    margin: 10px;
-   
-}
-.avainfo .since {
-    color: white;
-
-}
 
 
 
@@ -510,19 +497,49 @@ li a:hover {
     overflow:hidden;
     z-index:99
     }  
-    #nums_1 {padding: 0;}  
+    /* #nums_1 {padding: 0;}  
 
     .gir_1 {background-position: 0 0}  
 
     .gir_2 {background-position: 0 -36px}  
 
-    .gir_3 {background-position: 0 -72px} 
+    .gir_3 {background-position: 0 -72px}  */
     
+
+.pc {
+    margin-left: auto;
+    text-align: center;
+}
+
+.pc .pcspec {
+    color: rgb(175, 175, 175);
+    margin-top: 14px;
+}    
+
+.avainfo {
+    display: flex;
+  
+    
+    width: 900px;
+   
+}
+
+.avainfo img {
+    border-radius: 40px;
+    margin: 10px;
+   
+}
+.avainfo .since {
+    color: white;
+    text-align: right;
+}
+
 
 footer {
     margin: auto;
     width: 1140px;
-    height: 65px;
     background: #202020;
+    display: flex;
+    justify-content: center;
     /* font-family: 'Noto Sans Balinese', sans-serif; */
 }
